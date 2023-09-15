@@ -1,8 +1,7 @@
 import Head from 'next/head'
-// import ArticleList from '../components/ArticleList'
+import ArticleList from '../components/ArticleList'
 
 export default function Home({ articles }) {
-  console.log(articles)
   return (
     <div>
       <Head>
@@ -10,7 +9,7 @@ export default function Home({ articles }) {
         <meta name='keywords' content='web development, programming' />
       </Head>
       
-      {/* <ArticleList articles={articles} /> */}
+      {<ArticleList articles={articles} />}
 
     </div>
   )
