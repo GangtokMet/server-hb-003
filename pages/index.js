@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-export default function Home({articles}) {
+export default function Home({ articles }) {
+  console.log(articles)
   return (
     <div>
       <Head>
@@ -10,7 +11,6 @@ export default function Home({articles}) {
       
       {articles.map((article) => (
         <h3>{article.title}</h3>
-        // <p>{article.</p>
       ))}
 
     </div>
