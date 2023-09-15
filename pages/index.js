@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ArticleList from '../components/ArticleList'
+// import ArticleList from '../components/ArticleList'
 
 export default function Home({ articles }) {
   return (
@@ -8,8 +8,10 @@ export default function Home({ articles }) {
         <title>WEBApp Newz</title>
         <meta name='keywords' content='web development, programming' />
       </Head>
-      
-      <ArticleList articles={articles} />
+      {/* <ArticleList articles={articles} /> */}
+      {articles.map((article) => (
+        <h3>{article.title}</h3>
+      ))}
 
     </div>
   )
