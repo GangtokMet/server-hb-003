@@ -6,7 +6,7 @@ const article = () => {
 
     return (
         <div>
-            This is an article { id }
+            This is an article {id}
         </div>
     )
 }
