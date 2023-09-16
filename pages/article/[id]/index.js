@@ -22,7 +22,7 @@ export const getStaticProps = async (context) => {
     
     return {
         props: {
-            article
+            article,
         }
     }
 }
